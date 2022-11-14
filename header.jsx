@@ -1,14 +1,15 @@
 import React from "react";
-import Navbar from 'react-bootstrap/Navbar';
-import SearchRoundedIcon from '@mui/icons-material/SearchRounded';
-import EmojiEventsIcon from '@mui/icons-material/EmojiEvents';
-import InboxIcon from '@mui/icons-material/Inbox';
-import HelpIcon from '@mui/icons-material/Help';
-import MenuIcon from '@mui/icons-material/Menu';
-//import header from "./Header.css";
-import { Link } from 'react-router-dom'
-import avatar from '../../Avatar';
-import Button from  '../../Avatar';
+import Navbar from "react-bootstrap/Navbar";
+import SearchRoundedIcon from "@mui/icons-material/SearchRounded";
+import EmojiEventsIcon from "@mui/icons-material/EmojiEvents";
+import InboxIcon from "@mui/icons-material/Inbox";
+import HelpIcon from "@mui/icons-material/Help";
+import MenuIcon from "@mui/icons-material/Menu";
+import header from "./Header.css";
+import { Link } from "react-router-dom";
+//import avatar from '../../Avatar';
+//import Button from  '../../Avatar';
+//var User = null;
 function Header1() {
   return (
     <Navbar className="main-nav">
