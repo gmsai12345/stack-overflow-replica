@@ -9,54 +9,48 @@ import MenuIcon from '@mui/icons-material/Menu';
 import { Link } from 'react-router-dom'
 import avatar from '../../Avatar';
 import Button from  '../../Avatar';
-var User = null; 
 function Header1() {
- 
   return (
-   
-    <div> 
-      <Navbar> 
-      <Link to = '/' className = "logoimage" ><span> <img src = "https://raw.githubusercontent.com/Manoj-Athi/Stack-overflow/main/client/src/assets/logo.png" alt = "" className = "stackoverflowicon"/> </span> </Link>
-      <Link to = '/' className = "about" ><span>  about </span></Link> 
-      <Link to = '/' className = "Products" ><span>  Products </span></Link>
-      <Link to = '/' className = "forteams" ><span>  For Teams </span></Link>
-      
-      <span>
-       <form>
-         <span>   
-      <SearchRoundedIcon className="header__logoImage" fontSize="small" />
-      <input placeholder="Search"/>
-      </span>
-      </form>
-      { User === null ?
-      <Link to = '/Auth' className = "loginauthen" >log in</Link> :
-      <>
-       <Link to = '/Avatar' className = "loginavatar" > <Avatar>M<Avatar/>  </Link> 
-     
-      <button> </button>
-            </>
+    <Navbar className="main-nav">
+      <div className="navbar">
+        <Link to="/" className="nav-item nav-logo">
+          <img
+            src="https://raw.githubusercontent.com/Manoj-Athi/Stack-overflow/main/client/src/assets/logo.png"
+            alt="logo"
+          />
+        </Link>
+        <Link to="/" className="nav-item nav-btn">
+          About
+        </Link>
+        <Link to="/" className="nav-item nav-btn">
+          Products
+        </Link>
+        <Link to="/" className="nav-item nav-btn">
+          For Teams
+        </Link>
 
-      }
-    
-    
-      <button className = "b1" >
-      <EmojiEventsIcon className="header1" fontSize="medium" />
-      </button>
-      <button className = "b2" >
-      <InboxIcon className="header__logoImage" fontSize="medium" />
-      </button>
-      <button className = "b3">
-      <HelpIcon className="header__logoImage" fontSize="medium" />
-      </button>
-      <button className = "b4">
-      <MenuIcon className="header__logoImage" fontSize="medium" />
-      </button>
-      <button type="submit">Login</button>
-      </span>
-           </Navbar>
-        
-            </div>
-
+        <input type="text" placeholder="Search..." />
+        <img
+          src={SearchRoundedIcon}
+          alt="search"
+          width="18"
+          className="search-icon"
+        />
+        <button className="b1">
+          <EmojiEventsIcon className="header1" fontSize="medium" />
+        </button>
+        <button className="b2">
+          <InboxIcon className="header__logoImage" fontSize="medium" />
+        </button>
+        <button className="b3">
+          <HelpIcon className="header__logoImage" fontSize="medium" />
+        </button>
+        <button className="b4">
+          <MenuIcon className="header__logoImage" fontSize="medium" />
+        </button>
+        <button type="submit">Login</button>
+      </div>
+    </Navbar>
   );
 }
 export default Header1;
